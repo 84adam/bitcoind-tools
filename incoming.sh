@@ -15,7 +15,7 @@ echo " "
 echo "\$\$\$\$"
 echo " "
 # include path to bitcoind debug.log file below
-tail -n 200 /<PATH>/debug.log | grep "progress" | tail -n 3
+tail -n 200 /<PATH>/debug.log | grep "progress" | awk '{ print $1,$10,$5,$9,$4,$6,$7,$8,$11 }' | tail -n 3
 echo " "
 echo "\$\$\$\$"
 echo " "
