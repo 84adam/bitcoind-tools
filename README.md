@@ -14,12 +14,20 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State
  
 $$$$
  
-tcp        0      1 <local-device>:<port> <remote-device>:8333       SYN_SENT   
-tcp   2364022      0 <local-device>:<port> <remote-device>:8333       ESTABLISHED
-tcp     1285      0 <local-device>:<port> <remote-device>:8333       ESTABLISHED
-tcp   1868483      0 <local-device>:<port> <remote-device>:8333       ESTABLISHED
-tcp   1376190      0 <local-device>:<port> <remote-device>:8333       ESTABLISHED
-tcp   955902      0 <local-device>:<port> <remote-device>:8333       ESTABLISHED
+tcp        0      0 127.0.0.1:9050          127.0.0.1:38106         ESTABLISHED
+tcp        0      0 127.0.0.1:38104         127.0.0.1:9050          ESTABLISHED
+tcp        0   4482 127.0.0.1:9050          127.0.0.1:38636         ESTABLISHED
+tcp        0      0 127.0.0.1:38672         127.0.0.1:9050          ESTABLISHED
+tcp        0      0 127.0.0.1:39312         127.0.0.1:9051          ESTABLISHED
+tcp        0      0 127.0.0.1:9051          127.0.0.1:39312         ESTABLISHED
+tcp        0      0 127.0.0.1:38162         127.0.0.1:9050          ESTABLISHED
+tcp        0      0 127.0.0.1:9050          127.0.0.1:38672         ESTABLISHED
+tcp        0      0 127.0.0.1:38554         127.0.0.1:9050          ESTABLISHED
+tcp        0      0 127.0.0.1:9050          127.0.0.1:38160         ESTABLISHED
+tcp        0      0 127.0.0.1:9050          127.0.0.1:38162         ESTABLISHED
+tcp        0      0 127.0.0.1:9050          127.0.0.1:38104         ESTABLISHED
+tcp        0      0 127.0.0.1:38106         127.0.0.1:9050          ESTABLISHED
+tcp        0   9846 192.168.100.1:60576    100.100.50.250:9001     ESTABLISHED
  
 $$$$
  
@@ -27,9 +35,9 @@ $$$$
  
 $$$$
  
-2019-09-02T05:16:19Z UpdateTip: new best=00000000000000000f0473a48ca2703ba6fbba21343858ee4e1a6e0aac74b9f9 height=329723 version=0x00000002 log2_work=81.431898 tx=51247194 date='2014-11-12T18:46:38Z' progress=0.114779 cache=138.0MiB(655391txo)
-2019-09-02T05:16:20Z UpdateTip: new best=000000000000000016332417a3188fd1dca66e160026517c60881871680e617c height=329724 version=0x00000002 log2_work=81.431973 tx=51248056 date='2014-11-12T18:54:12Z' progress=0.114781 cache=138.1MiB(656247txo)
-2019-09-02T05:16:20Z UpdateTip: new best=0000000000000000096a02d700a3ecac44068b8dcd443b3177d40f4a1c6fba2f height=329725 version=0x00000002 log2_work=81.432048 tx=51249401 date='2014-11-12T19:08:15Z' progress=0.114784 cache=138.2MiB(657691txo)
+2020-11-19T20:37:44Z progress=0.318720 height=447208 date='2017-01-08T16:05:27Z' best=0000000000000000008218deb0a58d35292133bf3726a8e9f0962ff60e4c49ed version=0x20000000 log2_work=85.789478 tx=185966261 cache=888.2MiB(7766836txo)
+2020-11-19T20:37:44Z progress=0.318721 height=447209 date='2017-01-08T16:05:37Z' best=00000000000000000128a03215169359532607580caf772db342b5954e3b5884 version=0x20000000 log2_work=85.789507 tx=185966350 cache=888.2MiB(7766679txo)
+2020-11-19T20:37:44Z progress=0.318725 height=447210 date='2017-01-08T16:25:31Z' best=000000000000000003086c117d66efbe7f8dc9f9f10097eedd1003c4f31e1a7f version=0x20000002 log2_work=85.789537 tx=185969191 cache=888.5MiB(7769302txo)
  
 $$$$
  
@@ -38,7 +46,7 @@ $$$$
 $$$$
  
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sdb        295G   30G  251G  11% /mnt/volume2
+/dev/sda1       916G  116G  754G  14% /mnt/ext
  
 $$$$
 ```
