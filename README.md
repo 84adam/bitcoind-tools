@@ -2,6 +2,11 @@
 helpful scripts for managing a bitcoin core full node
 
 ## incoming.sh
+
+**Edit these values before running:**
+- `LOG_PATH="/mnt/ext/bitcoin/debug.log"`
+- `DRIVE="/dev/sda"`
+
 Run `watch -n 1 ./incoming.sh` to use as a 'dashboard'
 
 Example outputs:
