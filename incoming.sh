@@ -6,7 +6,7 @@ echo "Proto Recv-Q Send-Q Local Address           Foreign Address         State"
 echo " "
 echo "\$\$\$\$"
 echo " "
-netstat -t | grep tcp
+netstat -n | grep tcp
 echo " "
 echo "\$\$\$\$"
 echo " "
